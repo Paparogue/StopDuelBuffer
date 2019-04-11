@@ -9,4 +9,4 @@ Auto-Decline World Buff / Flask Chugger Duels.
 5.  Activate it in Character selection
 
 # Preview
-![alt text](https://i.imgur.com/Sshkd4n.jpg)
+![alt text](https://i.imgur.com/hxtJvT6.png)
