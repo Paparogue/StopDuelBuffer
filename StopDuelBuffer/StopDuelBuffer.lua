@@ -65,7 +65,9 @@ DuelDenial:SetScript("OnEvent", function()
 		end
 		CancelDuel();
 	end
-	if(sT ~= nil) then
+	if(sT) then
 		TargetByName(sT, true);
+	else
+		ClearTarget();
 	end
 end)
