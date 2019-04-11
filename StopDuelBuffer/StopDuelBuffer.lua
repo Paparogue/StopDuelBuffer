@@ -1,14 +1,11 @@
 local DuelDenial = CreateFrame("Frame", "NO_WORLD_BUFF_DUEL_DENIAL", UIParent);
-DuelDenial:RegisterEvent("DUEL_REQUESTED")
 local ru_buffTool = CreateFrame("GameTooltip", "ru_buff", UIParent, "GameTooltipTemplate");
 ru_buffTool:SetOwner(UIParent, "ANCHOR_NONE");
+DuelDenial:RegisterEvent("DUEL_REQUESTED")
 local SayLoud = {};
-local info = ChatTypeInfo["SYSTEM"];
-DEFAULT_CHAT_FRAME:AddMessage("Duel Denial loaded.", info.r, info.g, info.b, info.id);
 
 local function Buffed(sBuff, target)
   for i=1,64,1 do
-	ru_buffTool:SetOwner(UIParent, "ANCHOR_NONE");
     ru_buffTool:ClearLines();
     ru_buffTool:SetUnitBuff(target, i);
     local buff = ru_buffTextLeft1:GetText();
@@ -24,7 +21,6 @@ end
 
 local function Debuffed(sBuff, target)
   for i=1,64,1 do
-	ru_buffTool:SetOwner(UIParent, "ANCHOR_NONE");
     ru_buffTool:ClearLines();
     ru_buffTool:SetUnitDebuff(target, i);
     local buff = ru_buffTextLeft1:GetText();
@@ -71,3 +67,6 @@ DuelDenial:SetScript("OnEvent", function()
 		ClearTarget();
 	end
 end)
+
+local info = ChatTypeInfo["SYSTEM"];
+DEFAULT_CHAT_FRAME:AddMessage("Duel Denial loaded.", info.r, info.g, info.b, info.id);
