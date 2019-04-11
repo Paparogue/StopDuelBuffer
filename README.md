@@ -6,7 +6,7 @@ Auto-Decline World Buff / Flask Chugger Duels.
 2.  Download Zip
 3.  Drag Folder to World of Warcraft 1.12\Interface\AddOns
 4.  Rename it from StopDuelBuffer-Master to StopDuelBuffer
-5.  Activate ingame
+5.  Activate it in Character selection
 
 # Preview
 ![alt text](https://i.imgur.com/Sshkd4n.jpg)
